@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おいしいケーキ屋さん</title>
+  <style>
+    body {
+      font-family: "游ゴシック体", "Yu Gothic", sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #ffc0cb;
+    }
+
+    .cakes-container {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 20px; 
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .cake {
+	flex: 0 0 calc(50% - 20px); 
+	box-sizing: border-box;
+	background-color: #FFE6EB;
+	border: 1px solid #800000;
+	border-radius: 8px;
+	text-align: center;
+	padding: 15px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .cake h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #800000;
+    }
+
+    .cake img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .cake p {
+      font-size: 15px;
+      color: #800000;
+      line-height: 1.6;
+      margin-top: 10px;
+      white-space: normal; 
+    }
+
+    @media (max-width: 600px) {
+      .cake {
+        flex: 0 0 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; margin-bottom:30px;color:#800000">おいしいケーキ屋さん</h1>
+
+  <div class="cakes-container">
+    <div class="cake">
+      <h2>ショートケーキ</h2>
+      <img src="cake01.jpg" alt="ショートケーキ">
+      <p>イチゴがのった一番人気のスポンジケーキです。大人から子供まで、年中愛されるケーキです。</p>
+    </div>
+
+    <div class="cake">
+      <h2>モンブラン</h2>
+      <img src="cake02.jpg" alt="モンブラン">
+      <p>栗をふんだんに使ったケーキです。しっとりした甘さが特徴です。</p>
+    </div>
+
+    <div class="cake">
+      <h2>ザッハトルテ</h2>
+      <img src="cake03.jpg" alt="ザッハトルテ">
+      <p>濃厚なチョコレートの風味が魅力のケーキ。コーヒーとの相性も抜群です。</p>
+    </div>
+
+    <div class="cake">
+      <h2>シュークリーム</h2>
+      <img src="cake04.jpg" alt="シュークリーム">
+      <p>外はサクサク、中はとろけるようなクリームがたっぷり入った人気スイーツです。</p>
+    </div>
+  </div>
+</body>
+</html>
